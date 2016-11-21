@@ -10,6 +10,10 @@ Once you have an account visit https://everydayhero-staging.com/developers/oauth
 
 Create an oauth application.
 
+Set the Redirect URI and Application URI settings for this local example:
+
+![Example settings](https://github.com/everydayhero/oauth-examples/blob/master/node/docs/example-application-settings.png?raw=true)
+
 ## Step 3. Clone the project and change directory to `./node`
 
 ```
