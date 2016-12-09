@@ -1,0 +1,121 @@
+:root, html, body {
+  height: 100%;
+}
+
+:root {
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-size: 100%;
+  list-style: none;
+  text-transform: none;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+}
+
+label, input, button, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  height: auto;
+  line-height: inherit;
+}
+select ::-ms-expand {
+ display:none;
+}
+
+.container {
+  margin: 1rem auto;
+  max-width: 32rem;
+  padding: 1rem;
+}
+
+.heading {
+  margin: 2rem 0;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.form, .labal, .input, .button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.label {
+  margin: 0.75rem 0;
+}
+
+.input {
+  padding: 0.75rem;
+  border: thin solid grey;
+  margin: 0.75rem 0;
+  border-radius: 0.25rem;
+  line-height: inherit;
+}
+
+.select {
+  position: relative;
+}
+.select:before {
+  content: '\25BE';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button {
+  color: coral;
+  padding: 0.75rem;
+  background-color: transparent;
+  border: thin solid currentColor;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+.button:hover {
+  color: white;
+  background-color: coral;
+}
+
+.result {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: whitesmoke;
+  overflow: auto;
+  margin: 2rem 0;
+  border-color: whitesmoke;
+  border-style: solid;
+  border-width: thin;
+}
+
+.error {
+  color: indianred;
+  border-color: currentColor;
+}
+
+.success {
+  color: seagreen;
+  border-color: currentColor;
+}
