@@ -3,3 +3,4 @@
 Language examples:
 
 * [node](https://github.com/everydayhero/oauth-examples/tree/master/node)
+* [client-side javascript](https://github.com/everydayhero/oauth-examples/tree/master/client-side-javascript)
