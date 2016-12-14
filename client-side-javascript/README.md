@@ -29,3 +29,16 @@ E.G. You can use the python simple http server which ships with OSX by default
 $ python -m SimpleHTTPServer
 ```
 
+## Step 4. Test the flows
+
+You should be able to try different inputs to either the sign in or sign up forms and see the server response in the panel above each.
+
+### Notes
+
+On sign in an incorrect email address or password will result in a 404 and a `{ "message": "The resource you requested could not be found" }` body.
+
+![Example sign in error](https://github.com/everydayhero/oauth-examples/blob/master/client-side-javascript/docs/example-sign-in-error.png?raw=true)
+
+On sign up an existing email address _can_ be used, however if you use an incorrect password you'll receive a 422 with a `{ "field": "email", "message": "has already been taken" }` under `error.errors` in the body.
+
+![Example sign up error](https://github.com/everydayhero/oauth-examples/blob/master/client-side-javascript/docs/example-sign-up-error.png?raw=true)
